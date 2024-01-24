@@ -1,13 +1,18 @@
 <template>
   <div id="container">
+    <ion-icon v-if="icon" aria-hidden="true" :icon="icon" style="font-size: 4em" />
+    <br>
     <strong>{{ name }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { IonIcon } from '@ionic/vue';
+
 defineProps({
   name: String,
+  icon: IonIcon
 });
 </script>
 
