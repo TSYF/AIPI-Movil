@@ -1,0 +1,7 @@
+{
+  "name": "AIPI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
